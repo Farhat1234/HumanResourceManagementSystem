@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="EmployeePassport.aspx.cs" Inherits="HumanResourceApplication.EmployeeMgt.EmployeePassport" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -162,7 +163,7 @@
                                 <div class="form-group">
                                     <p>Permananent Account Number (PAN)</p>
                                     <span class="icon-case"><i class="fa fa-info"></i></span>
-                                    <asp:TextBox ID="txtPAN" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPAN" runat="server" placeholder="Enter Permananent Account Number"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="rightcontact">
@@ -180,7 +181,7 @@
                                 <div class="form-group">
                                     <p>Adhaar Card Number</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
-                                    <asp:TextBox ID="txtAdhaarCardNumber" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtAdhaarCardNumber" runat="server" placeholder="Enter Adhaar Card Number"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="rightcontact">
@@ -199,7 +200,7 @@
                                 <div class="form-group">
                                     <p>Driving License Number</p>
                                     <span class="icon-case"><i class="fa fa-info"></i></span>
-                                    <asp:TextBox ID="txtlicensenumber" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtlicensenumber" runat="server" placeholder="Enter Driving License Number"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="rightcontact">
@@ -217,7 +218,7 @@
                                 <div class="form-group">
                                     <p>Election Card Number</p>
                                     <span class="icon-case"><i class="fa fa-info"></i></span>
-                                    <asp:TextBox ID="txtElectionCardNumber" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtElectionCardNumber" runat="server" placeholder="Enter Election Card Number"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="rightcontact">
@@ -235,13 +236,13 @@
                                 <div class="form-group">
                                     <p>Passport Number</p>
                                     <span class="icon-case"><i class="fa fa-info"></i></span>
-                                    <asp:TextBox ID="txtPassportNumber" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPassportNumber" runat="server" placeholder="Enter Passport Number"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtPassportNumber" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
                                     <p>Name as per Passport</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
-                                    <asp:TextBox ID="txtPassportName" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPassportName" runat="server" placeholder="Enter Name as per Passport"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtPassportName" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
@@ -253,13 +254,21 @@
                                 <div class="form-group">
                                     <p>Date of Birth</p>
                                     <span class="icon-case"><i class="fa fa-calendar"></i></span>
-                                    <asp:TextBox ID="txtDOB" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtDOB" runat="server" placeholder="Select Date Of Birth"></asp:TextBox>
+                                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+                                    <cc1:CalendarExtender ID="TbDOJ_CalendarExtender" runat="server" Enabled="True"
+                                    TargetControlID="txtDOB">
+                                </cc1:CalendarExtender>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtDOB" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
                                     <p>Issue Date</p>
                                     <span class="icon-case"><i class="fa fa-calendar"></i></span>
-                                    <asp:TextBox ID="txtIssuedate" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtIssuedate" runat="server" placeholder="Select Issue Date"></asp:TextBox>
+                                    <cc1:CalendarExtender ID="CalendarExtender1" runat="server" Enabled="True"
+                                    TargetControlID="txtIssuedate">
+                                </cc1:CalendarExtender>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtIssuedate" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                             </div>
@@ -289,19 +298,26 @@
                                 <div class="form-group">
                                     <p>Place of Issue</p>
                                     <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
-                                    <asp:TextBox ID="txtPOI" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPOI" runat="server" placeholder="Select Place Of Issue"></asp:TextBox>
+                                    
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtPOI" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
                                     <p>Place of Birth</p>
                                     <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
-                                    <asp:TextBox ID="txtPOB" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPOB" runat="server" placeholder="Select Place Of Birth"></asp:TextBox>
+                                    <cc1:CalendarExtender ID="CalendarExtender3" runat="server" Enabled="True"
+                                    TargetControlID="txtPOB">
+                                </cc1:CalendarExtender>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtPOB" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
                                     <p>Expiry Date</p>
                                     <span class="icon-case"><i class="fa fa-calendar"></i></span>
-                                    <asp:TextBox ID="txtExprdate" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtExprdate" runat="server" placeholder="Select Expiry Date"></asp:TextBox>
+                                    <cc1:CalendarExtender ID="CalendarExtender4" runat="server" Enabled="True"
+                                    TargetControlID="txtExprdate">
+                                </cc1:CalendarExtender>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtExprdate" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                             </div>

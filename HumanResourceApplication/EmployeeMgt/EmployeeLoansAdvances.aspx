@@ -167,17 +167,20 @@
                                     <span class="icon-case"><i class="fa fa-book"></i></span>
                                     <asp:DropDownList ID="drpLoanAdvance" runat="server" class="dropdownlist">
                                     </asp:DropDownList>
+                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="drpLoanAdvance" InitialValue="---Select Loan/Advance Type---" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                                 <div class="form-group">
                                     <p>Payee Name</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
-                                    <asp:TextBox ID="txtPayeeName" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPayeeName" runat="server" placeholder="Enter Payee Name"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtPayeeName" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
                                     <p>Amount Requested</p>
                                     <span class="icon-case"><i class="fa fa-rupee"></i></span>
-                                    <asp:TextBox ID="txtAmountRequested" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtAmountRequested" runat="server" placeholder="Enter Amount Requested"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtAmountRequested" ErrorMessage="Enter a Valid Number" ForeColor="Red" style="margin:76px;" ValidationExpression="^\d+(\.\d\d)?$"></asp:RegularExpressionValidator>
+                                   
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtAmountRequested" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                             </div>
@@ -185,8 +188,8 @@
                                 <div class="form-group">
                                     <p>Primary Approver</p>
                                     <span class="icon-case"><i class="fa fa-edit"></i></span>
-                                    <asp:TextBox ID="txtPM" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPM" ErrorMessage="*" ForeColor="Red" />
+                                    <asp:TextBox ID="txtPM" runat="server" placeholder="Enter Primary Approver"></asp:TextBox>
+                                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPM" ErrorMessage="*" ForeColor="Red" />--%>
                                 </div>
 
                                 <div class="form-group">
@@ -197,8 +200,19 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="*" ForeColor="red" ClientValidationFunction="ValidateCheckBox"></asp:CustomValidator>
+               
                 <asp:CheckBox ID="CheckBox1" runat="server" Text="I have read all the Terms and Conditions related to the Loans and Benefits offered by Company" Style="width: 9%; height: 38px" />
+                
+                <script type="text/javascript">
+                    function ValidateCheckBox(sender, args) {
+                        if (document.getElementById("<%=CheckBox1.ClientID %>").checked == true) {
+                            args.IsValid = true;
+                        } else {
+                            args.IsValid = false;
+                        }
+                    }
+                </script>
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="btn btn-success" />
             </div>
         </div>

@@ -1,11 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="ConsolidateAttandance.aspx.cs" Inherits="HumanResourceApplication.Attendance_Mgt.ConsolidateAttandance"  Culture="en-GB" enableEventValidation="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="ConsolidateAttandance.aspx.cs" Inherits="HumanResourceApplication.Attendance_Mgt.ConsolidateAttandance" Culture="en-GB" EnableEventValidation="false" %>
+
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   
+
     <link href="../Styles/form.css" rel="stylesheet" />
     <style>
-        .panel-body{
-            height:300px;
+        .panel-body {
+            height: 300px;
         }
     </style>
 </asp:Content>
@@ -142,90 +143,90 @@
     </div>
 </aside>
 
-     <div class="row">
+    <div class="row">
         <div class="col-md-12">
             <div class="text-center m-b-md">
-                <h3><B>Consolidated Attendance</B></h3>
-          
+                <h3><b>Consolidated Attendance</b></h3>
+
             </div>
             <div class="hpanel">
                 <div class="panel-body">
 
 
-                     <form>
-                         <div class="leftcontact">
-                             <div class="form-group">
-			<p>From Date</p>
-			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-                  <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-                     </cc1:ToolkitScriptManager>
-                     <asp:TextBox ID="txtFromDate" runat="server"></asp:TextBox>
-                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtFromDate"
-                        PopupButtonID="imgPopup1" Format="dd/MM/yyyy" />
+                    <form>
+                        <div class="leftcontact">
+                            <div class="form-group">
+                                <p>From Date</p>
+                                <span class="icon-case"><i class="fa fa-calendar"></i></span>
+                                <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                                </cc1:ToolkitScriptManager>
+                                <asp:TextBox ID="txtFromDate" runat="server"></asp:TextBox>
+                                <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtFromDate"
+                                    PopupButtonID="imgPopup1" Format="dd/MM/yyyy" />
 
-                         </div>
-                             </div>
-                         <div class="rightcontact">
-                             <div class="form-group">
-			<p>To Date</p>
-			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-                                  <asp:TextBox ID="txtToDate" runat="server"></asp:TextBox>
-                     <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtToDate"
-                        PopupButtonID="imgPopup2" Format="dd/MM/yyyy" />
-                     <asp:CompareValidator ID="CompareValidator1" ValidationGroup="Date" ForeColor="Red"
-                        runat="server" ControlToValidate="txtFromDate" ControlToCompare="txtToDate"
-                        Operator="LessThan" Type="Date" ErrorMessage="Start date must be less than End date."></asp:CompareValidator>
+                            </div>
+                        </div>
+                        <div class="rightcontact">
+                            <div class="form-group">
+                                <p>To Date</p>
+                                <span class="icon-case"><i class="fa fa-calendar"></i></span>
+                                <asp:TextBox ID="txtToDate" runat="server"></asp:TextBox>
+                                <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtToDate"
+                                    PopupButtonID="imgPopup2" Format="dd/MM/yyyy" />
+                                <asp:CompareValidator ID="CompareValidator1" ValidationGroup="Date" ForeColor="Red"
+                                    runat="server" ControlToValidate="txtFromDate" ControlToCompare="txtToDate"
+                                    Operator="LessThan" Type="Date" Style="margin: 96px;" ErrorMessage="To Date must be greater than From Date"></asp:CompareValidator>
 
-                         </div>
-                             </div>
-                         </form>
-                   
+                            </div>
+                        </div>
+                    </form>
+
                     <td class="auto-style6" colspan="3">
-                     <asp:GridView ID="GridView1" runat="server" HorizontalAlign="Center" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="Both">
-                        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-                        <EditRowStyle BackColor="#999999" />
-                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                        <SortedAscendingCellStyle BackColor="#E9E7E2" />
-                        <SortedAscendingHeaderStyle BackColor="#506C8C" />
-                        <SortedDescendingCellStyle BackColor="#FFFDF8" />
-                        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
-                        <Columns>
-                           <%--<asp:TemplateField HeaderText="From Date">
+                        <asp:GridView ID="GridView1" runat="server" HorizontalAlign="Center" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="Both">
+                            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                            <EditRowStyle BackColor="#999999" />
+                            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                            <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                            <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                            <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                            <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                            <Columns>
+                                <%--<asp:TemplateField HeaderText="From Date">
                               <ItemTemplate>
                                   <asp:Label ID="FromDate" runat="Server"
                                       Text='<%# Eval("FromDate", "{0:dd/MM/yyyy}") %>' />
                               </ItemTemplate>
                               </asp:TemplateField>--%>
-                           <asp:BoundField HeaderText="Employee ID" DataField="EmpID"/>
-                           <asp:BoundField HeaderText="Employee Name" DataField="EmpName"/>
-                           <asp:TemplateField HeaderText="First Swipe">
-                              <ItemTemplate>
-                                 <asp:Label ID="FirstSwipe" runat="Server"
-                                    Text='<%# Eval("FirstSwipe", "{0:dd/MM/yyyy}") %>' />
-                              </ItemTemplate>
-                           </asp:TemplateField>
-                           <asp:TemplateField HeaderText="Last Swipe">
-                              <ItemTemplate>
-                                 <asp:Label ID="LastSwipe" runat="Server"
-                                    Text='<%# Eval("LastSwipe", "{0:dd/MM/yyyy}") %>' />
-                              </ItemTemplate>
-                           </asp:TemplateField>
-                           <asp:BoundField HeaderText="Total Hours" DataField="TotalHours"/>
-                           <asp:BoundField HeaderText="Leave" DataField="Leave"/>
-                           <asp:BoundField HeaderText="Day" DataField="Day"/>
-                        </Columns>
-                     </asp:GridView>
-                  </td>
-                              <asp:ImageButton ID="ImgSearchBtn" runat="server"  ValidationGroup="Date"  class="btn btn-success" AlternateText="Submit"/>
-                    </div>
-          
+                                <asp:BoundField HeaderText="Employee ID" DataField="EmpID" />
+                                <asp:BoundField HeaderText="Employee Name" DataField="EmpName" />
+                                <asp:TemplateField HeaderText="First Swipe">
+                                    <ItemTemplate>
+                                        <asp:Label ID="FirstSwipe" runat="Server"
+                                            Text='<%# Eval("FirstSwipe", "{0:dd/MM/yyyy}") %>' />
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Last Swipe">
+                                    <ItemTemplate>
+                                        <asp:Label ID="LastSwipe" runat="Server"
+                                            Text='<%# Eval("LastSwipe", "{0:dd/MM/yyyy}") %>' />
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:BoundField HeaderText="Total Hours" DataField="TotalHours" />
+                                <asp:BoundField HeaderText="Leave" DataField="Leave" />
+                                <asp:BoundField HeaderText="Day" DataField="Day" />
+                            </Columns>
+                        </asp:GridView>
+                    </td>
+                    <asp:ImageButton ID="ImgSearchBtn" runat="server" ValidationGroup="Date" class="btn btn-success" AlternateText="Submit" />
                 </div>
 
-           </div>
-         </div>
-   
+            </div>
+
+        </div>
+    </div>
+
 </asp:Content>

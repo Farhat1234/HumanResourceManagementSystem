@@ -182,25 +182,26 @@
                                         <asp:ListItem Text="Graduation" Value="Graduation"></asp:ListItem>
                                         <asp:ListItem Text="Post Graduation" Value="Post Graduation"></asp:ListItem>
                                         <asp:ListItem Text="Doctorate" Value="Doctorate"></asp:ListItem>
-                                        <asp:ListItem></asp:ListItem>
+
                                     </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="ddlEducation" InitialValue="0" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                                 <div class="form-group">
                                     <p>Start Date</p>
                                     <span class="icon-case"><i class="fa fa-calendar"></i></span>
                                     <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
                                     </cc1:ToolkitScriptManager>
-                                    <asp:TextBox ID="txtFromDate" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtFromDate" runat="server" placeholder="Select Start Date"></asp:TextBox>
                                     <cc1:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtFromDate"
                                         PopupButtonID="imgPopup1" Format="dd/MM/yyyy" />
                                     <asp:CompareValidator ID="CompareValidator1" ValidationGroup="Date" ForeColor="Red"
                                         runat="server" ControlToValidate="txtFromDate" ControlToCompare="txtToDate"
-                                        Operator="LessThan" Type="Date" ErrorMessage="Start date must be less than End date."></asp:CompareValidator>
+                                        Operator="LessThan" Type="Date"></asp:CompareValidator>
                                 </div>
                                 <div class="form-group">
                                     <p>Name of The Institution</p>
                                     <span class="icon-case"><i class="fa fa-home"></i></span>
-                                    <asp:TextBox ID="txtNameOfInstitute" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtNameOfInstitute" runat="server" placeholder="Enter Name Of The Institution"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
                                     <p>Country</p>
@@ -231,17 +232,18 @@
                                 <div class="form-group">
                                     <p>End Date</p>
                                     <span class="icon-case"><i class="fa fa-calendar "></i></span>
-                                    <asp:TextBox ID="txtToDate" runat="server"></asp:TextBox>
-                                    <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtFromDate"
+                                    <asp:TextBox ID="txtToDate" runat="server" placeholder="Select End Date"></asp:TextBox>
+                                    <cc1:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtToDate"
                                         PopupButtonID="imgPopup1" Format="dd/MM/yyyy" />
+
                                     <asp:CompareValidator ID="CompareValidator2" ValidationGroup="Date" ForeColor="Red"
                                         runat="server" ControlToValidate="txtToDate" ControlToCompare="txtFromDate"
-                                        Operator="GreaterThan" Type="Date" ErrorMessage="End date must be greater than Start date."></asp:CompareValidator>
+                                        Operator="GreaterThan" Type="Date" Style="margin: 76px;" ErrorMessage="End date must be greater than Start date."></asp:CompareValidator>
                                 </div>
                                 <div class="form-group">
                                     <p>Grade/Percentage</p>
                                     <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-                                    <asp:TextBox ID="txtGrade" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtGrade" runat="server" placeholder="Enter Grade/Percentage"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
                                     <p>State</p>
@@ -251,20 +253,33 @@
                                 </div>
                                 <div class="form-group">
                                     <p>Course Type</p>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="rbtntype" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                     <asp:RadioButtonList ID="rbtntype" runat="server" RepeatDirection="Horizontal">
                                         <asp:ListItem Text="Full Time" Value="Full Time"></asp:ListItem>
                                         <asp:ListItem Text="Part Time" Value="Part Time"></asp:ListItem>
                                         <asp:ListItem Text="Correspondance" Value="Correspondance"></asp:ListItem>
                                     </asp:RadioButtonList>
+
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
+                <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="*" ForeColor="red" ClientValidationFunction="ValidateCheckBox"></asp:CustomValidator>
                 <asp:CheckBox ID="chkTick" runat="server" Text="Below furnished information is as per my knowledge and for any misuse arising out of it, I will be held responsible" />
+                <script type="text/javascript">
+                    function ValidateCheckBox(sender, args) {
+                        if (document.getElementById("<%=chkTick.ClientID %>").checked == true) {
+                            args.IsValid = true;
+                        } else {
+                            args.IsValid = false;
+                        }
+                    }
+                </script>
 
                 <asp:Button ID="btnSave" runat="server" Text="Save" class="btn btn-success" />
                 <asp:Button ID="btnCancel" runat="server" Text="Cancel" class="btn btn-success" Style="background-color: #81BDA4; margin: -7% 67%; text-align: center" />
+                
             </div>
         </div>
     </div>

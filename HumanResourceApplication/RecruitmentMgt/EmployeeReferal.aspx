@@ -175,28 +175,28 @@
                                         <asp:ListItem Text="Master" Value="Master"></asp:ListItem>
                                         <asp:ListItem Text="Dr" Value="Dr"></asp:ListItem>
                                     </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="drpSalutation" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="drpSalutation" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                </div>
                                 <div class="form-group">
                                     <p>First Name</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
                                     <asp:TextBox ID="txtFName" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtFName" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtFName" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                                  <div class="form-group">
                                     <p>Date Of Birth</p>
                                     <span class="icon-case"><i class="fa fa-calendar"></i></span>
                                     <asp:TextBox ID="txtDOB" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtDOB" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtDOB" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                                 
                                 <div class="form-group">
                                     <p>Email Address</p>
                                     <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
                                     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEmail" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEmail" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
-                                        runat="server" ErrorMessage="Please Enter Valid Email ID"
+                                        runat="server" ErrorMessage="Please Enter Valid Email ID" style="margin:76px;"
                                         ValidationGroup="btnProceed" ControlToValidate="txtEmail"
                                         CssClass="requiredFieldValidateStyle"
                                         ForeColor="Red"
@@ -216,13 +216,15 @@
                                         <asp:ListItem Text="Graduation" Value="Graduation"></asp:ListItem>
                                         <asp:ListItem Text="Post Graduation" Value="Post Graduation"></asp:ListItem>
                                         <asp:ListItem Text="Doctorate" Value="Doctorate"></asp:ListItem>
-                                        <asp:ListItem></asp:ListItem>
+                                      
                                     </asp:DropDownList>
                                 </div>   
             <div class="form-group">
                             <p>Years of Experience</p>
                             <span class="icon-case"><i class="fa fa-info"></i></span>
                            <asp:TextBox ID="txtYearsofExperience" runat="server"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtYearsofExperience" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtYearsofExperience" ErrorMessage="Enter a Valid Number" ForeColor="Red" style="margin:76px;" ValidationExpression="^[1-9]\d$"></asp:RegularExpressionValidator>
                         </div>
                                 <div class="form-group">
                                     <p>Was he/she a part of our organization in past?</p>
@@ -246,7 +248,7 @@
                                     <p>Last Name</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
                                     <asp:TextBox ID="txtLName" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtLName" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtLName" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>  
                                 <div class="form-group">
                                     <p>Relationship</p>
@@ -265,9 +267,9 @@
                                     <p>Mobile Number</p>
                                     <span class="icon-case"><i class="fa fa-phone"></i></span>
                                     <asp:TextBox ID="txtMobile" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtMobile" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtMobile" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
-                                        runat="server" ErrorMessage="Please Enter Valid Mobile Number"
+                                        runat="server" ErrorMessage="Please Enter Valid Mobile Number" style="margin:76px;"
                                         ValidationGroup="btnProceed" ControlToValidate="txtMobile"
                                         CssClass="requiredFieldValidateStyle"
                                         ForeColor="Red"
@@ -289,7 +291,7 @@
                                     <p>Upload Resume</p>
                                     <span class="icon-case"><i class="fa fa-file"></i></span>
                                     <asp:FileUpload ID="flpResume" runat="server" />
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="flpResume" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="flpResume" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
 
                                 

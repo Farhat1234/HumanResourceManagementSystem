@@ -22,6 +22,15 @@ namespace HumanResourceApplication.EmployeeMgt {
         protected global::System.Web.UI.WebControls.DropDownList ddlEducation;
         
         /// <summary>
+        /// RequiredFieldValidator11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+        
+        /// <summary>
         /// ToolkitScriptManager1 control.
         /// </summary>
         /// <remarks>
@@ -148,6 +157,15 @@ namespace HumanResourceApplication.EmployeeMgt {
         protected global::System.Web.UI.WebControls.DropDownList DrpState;
         
         /// <summary>
+        /// RequiredFieldValidator7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        
+        /// <summary>
         /// rbtntype control.
         /// </summary>
         /// <remarks>
@@ -155,6 +173,15 @@ namespace HumanResourceApplication.EmployeeMgt {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rbtntype;
+        
+        /// <summary>
+        /// CustomValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator CustomValidator1;
         
         /// <summary>
         /// chkTick control.

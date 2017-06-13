@@ -159,15 +159,17 @@
                                 <div class="form-group">
                                     <p>Nominee Name</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
-                                    <asp:TextBox ID="txtNomineeName" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtNomineeName" runat="server" placeholder="Enter Nominee Name"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtNomineeName" ErrorMessage="*" ForeColor="Red" />
                                 </div>
                                 <div class="form-group">
                                     <p>Contact Number</p>
                                     <span class="icon-case"><i class="fa fa-user"></i></span>
-                                    <asp:TextBox ID="txtContactNumber" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtContactNumber" runat="server" placeholder="Enter Contact Number"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtContactNumber" ErrorMessage="*" ForeColor="Red" />
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtContactNumber" ErrorMessage="Enter a Valid Phone Number" ForeColor="Red" style="margin:76px;" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
                                 </div>
+                             
                                 <%--<div class="form-group">
                                     <p>Gender</p>
                                     <span class="icon-case"><i class="fa fa-male"></i></span>
@@ -201,11 +203,12 @@
                                     <span class="icon-case"><i class="fa fa-male"></i></span>
                                     <asp:DropDownList ID="drpRelation" runat="server" class="dropdownlist">
                                     </asp:DropDownList>
+                                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="drpRelation" ErrorMessage="*" ForeColor="Red" InitialValue="---Select Relation---"></asp:RequiredFieldValidator>
                                 </div>
                                 <div class="form-group">
                                     <p>Address</p>
                                     <span class="icon-case"><i class="fa fa-address-card"></i></span>
-                                    <asp:TextBox ID="txtAddress" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtAddress" runat="server" placeholder="Enter the Address"></asp:TextBox>
                                 </div>
 
                                 <%--<div class="form-group">
@@ -242,7 +245,7 @@
                                 </div>--%>
                             </div>
                         </div>
-                        <asp:Button ID="btnSave" runat="server" Text="Save" class="btn btn-success" />
+                        <asp:Button ID="btnSave" runat="server" Text="Save" class="btn btn-success" style="margin-left:23%;"/>
                         <asp:Button ID="btnCancel" runat="server" Text="Cancel" class="btn btn-success" Style="background-color: #81BDA4; margin: -7% 67%; text-align: center" />
 
                     </form>

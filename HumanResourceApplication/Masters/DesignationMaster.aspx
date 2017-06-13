@@ -125,7 +125,7 @@
             <li><a href="GraduationMaster.aspx">Graduation</a></li>
             <li><a href="PostGraduationMaster.aspx">Post Graduation</a></li>
               <li><a href="DoctorateMaster.aspx">Doctorate</a></li>
-              <li><a href="DomainMaster.aspx">Job Domain</a></li>
+              <li><a href="DomainMaster.aspx">Domain</a></li>
 		</ul>
 	</li>
 	<li>
@@ -134,28 +134,4 @@
 </ul>
     </div>
 </aside>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="text-center m-b-md">
-                <h3><b>Add New Designation</b></h3>
-                <small>Fill the form to add a new designation</small>
-            </div>
-            <asp:ScriptManager ID="ScriptManager1" runat="server">
-            </asp:ScriptManager>
-            <div class="hpanel">
-                <div class="panel-body">
-                    <div class="contentform">
-                        <div class="leftcontact">
-                            <div class="form-group">
-                                <p>Designation</p>
-                                <span class="icon-case"><i class="fa fa-user"></i></span>
-                                <asp:TextBox ID="txtDesignation" runat="server" placeholder="Enter A Designation"></asp:TextBox>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <asp:ImageButton ID="ImageButton1" runat="server" AlternateText="Save" class="btn btn-success" />
-    </div>
 </asp:Content>

@@ -22,6 +22,15 @@ namespace HumanResourceApplication.EmployeeMgt {
         protected global::System.Web.UI.WebControls.DropDownList drpLoanAdvance;
         
         /// <summary>
+        /// RequiredFieldValidator11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+        
+        /// <summary>
         /// txtPayeeName control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace HumanResourceApplication.EmployeeMgt {
         protected global::System.Web.UI.WebControls.TextBox txtAmountRequested;
         
         /// <summary>
+        /// RegularExpressionValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        
+        /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
@@ -67,13 +85,13 @@ namespace HumanResourceApplication.EmployeeMgt {
         protected global::System.Web.UI.WebControls.TextBox txtPM;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// CustomValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.CustomValidator CustomValidator1;
         
         /// <summary>
         /// CheckBox1 control.

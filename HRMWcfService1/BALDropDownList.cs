@@ -9,6 +9,11 @@ namespace HRMWcfService1
 {
     public class BALDropDownList
     {
+        public static DataTable NIOType()
+        {
+            return HRMDAL.DALDropDownList.NIOType();
+        }
+
         public static DataTable LoanAdvance()
         {
             return HRMDAL.DALDropDownList.LoanAdvance();
@@ -70,11 +75,6 @@ namespace HRMWcfService1
         public static DataTable Nationality()
         {
             return HRMDAL.DALDropDownList.Nationality();
-        }
-
-        public static DataTable NIOType()
-        {
-            return HRMDAL.DALDropDownList.NIOType();
         }
     }
 }

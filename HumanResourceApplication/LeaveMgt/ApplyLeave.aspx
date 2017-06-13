@@ -67,7 +67,7 @@
 
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                        <small class="text-muted">Founder <b class="caret"></b></small>
+                        <small class="text-muted">Founder of App <b class="caret"></b></small>
                     </a>
                     <ul class="dropdown-menu animated flipInX m-t-xs">
                         <li><a href="contacts.html">Contacts</a></li>
@@ -79,111 +79,112 @@
                 </div>
 
 
-                <%--<div id="sparkline1" class="small-chart m-t-sm"></div>
+                <div id="sparkline1" class="small-chart m-t-sm"></div>
                 <div>
                     <h4 class="font-extra-bold m-b-xs">
                         $260 104,200
                     </h4>
                     <small class="text-muted">Your income from the last year in sales product X.</small>
-                </div>--%>
+                </div>
             </div>
         </div>
 
           <ul class="nav" id="side-menu">
-	<li class="active">
-		<a href="../Default.aspx"> <span class="nav-label">Dashboard</span>  </a>
-	</li>
-	<li>
-		<a href="#"><span class="nav-label">Employee Details</span><span class="fa arrow"></span> </a>
-		<ul class="nav nav-second-level">
-			<li><a href="../EmployeeMgt/AddNewEmployee.aspx">Add New Employee</a></li>
-			<li><a href="../EmployeeMgt/EmployeeEducation.aspx">Education</a></li>
-			<li><a href="../EmployeeMgt/EmployeePassport.aspx">Identity Proof</a></li>
-			<li><a href="../EmployeeMgt/EmployeeFamilyNominations.aspx">Nomination</a></li>
-			<li><a href="../EmployeeMgt/EmployeeBankDetails.aspx">Bank</a></li>
-			<li><a href="../EmployeeMgt/EmployeeLoansAdvances.aspx">Loans & Advances</a></li>
-			<li><a href="../EmployeeMgt/EmployeeReportingManager.aspx">Hierarchy</a></li>
-			<li><a href="../EmployeeMgt/EmployeeSearch.aspx">Employee Search</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#"><span class="nav-label">Attendance</span><span class="fa arrow"></span> </a>
-		<ul class="nav nav-second-level">
-			<li><a href="../AttendanceMgt/ApplyAttendance.aspx">Apply Attendance</a></li>
-			<li><a href="../AttendanceMgt/ConsolidateAttandance.aspx">Consolidated</a></li>
-			<li><a href="../AttendanceMgt/ApplyOnDuty.aspx">On Duty Request</a></li>
-			<li><a href="../AttendanceMgt/OnDutyHistory.aspx">On Duty History</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#"><span class="nav-label">Leave</span><span class="fa arrow"></span> </a>
-		<ul class="nav nav-second-level">
-			<li><a href="../LeaveMgt/ApplyLeave.aspx">Apply Leave</a></li>
-			<li><a href="../LeaveMgt/ApproveLeaves.aspx">Approve Leave</a></li>
-			<li><a href="../LeaveMgt/LeaveQuota.aspx">Leave Quota</a></li>
-			<li><a href="../LeaveMgt/LeaveHistory.aspx">Leave History</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#"><span class="nav-label">Recruitment</span><span class="fa arrow"></span> </a>
-		<ul class="nav nav-second-level">
-			<li><a href="../RecruitmentMgt/ListOfCareers.aspx">Careers</a></li>
-			<li><a href="../RecruitmentMgt/PostingJob.aspx">Post A Job</a></li>
-			<li><a href="../RecruitmentMgt/EmployeeReferal.aspx">Employee Referral</a></li>
-			<li><a href="../RecruitmentMgt/IntimateHRReferal.aspx">Intimate HR Referrals</a></li>
-		</ul>
-	</li>
-	  <li>
-		<a href="#"><span class="nav-label">Payroll</span><span class="fa arrow"></span> </a>
-		<ul class="nav nav-second-level">
-			<li><a href="../SalaryMgt/Band A Payslip.aspx">Band Pay Slip</a></li>
-			<li><a href="../SalaryMgt/Salary(Payslip).aspx">Salary Pay Slip</a></li>
-			<li><a href="../SalaryMgt/PrintPreview.aspx">Print Preview</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#" data-toggle="modal" data-target="#myModal"> <span class="nav-label">Holiday List</span></a>
-	</li>
-	 <div class="text-center">
-							   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="color-line"></div>
-						<div class="modal-header text-center">
-							<h4 class="modal-title">Holiday List</h4>
-							<small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-						</div>
-						<div class="modal-body">
+            <li class="active">
+                <a href="../Default.aspx"> <span class="nav-label">Dashboard</span>  </a>
+            </li>
+          
+            <li>
+                <a href="#"><span class="nav-label">Personal Details</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    
+                    <li><a href="../EmployeeMgt/EmployeeBankDetails.aspx"> Bank Deatils</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeEdit.aspx">Edit</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeEducation.aspx"> Education</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeFamilyNominations.aspx"> Nomination</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeITProof.aspx"> IT Proof</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeLoansAdvances.aspx">Loans Advances</a></li>
+                    <li><a href="../EmployeeMgt/EmployeePassport.aspx"> Passport</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeReportingManager.aspx">Reporting Manager</a></li>
+                    <li><a href="../EmployeeMgt/EmployeeSearch.aspx">Employee Search</a></li>
+                    <li><a href="../EmployeeMgt/AddNewEmployee.aspx">Add New Employee</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="nav-label">Attendance</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                   
+                    <li><a href="../AttendanceMgt/ApplyAttendance.aspx">Apply Attendance</a></li>
+                    <li><a href="../AttendanceMgt/ApplyOnDuty.aspx">Apply on duty</a></li>
+                    <li><a href="../AttendanceMgt/ConsolidateAttandance.aspx">ConsolidateAttendance</a></li>
+                    <li><a href="../AttendanceMgt/OnDutyHistory.aspx">On Duty History</a></li>
+                 
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="nav-label">Leave</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="ApplyLeave.aspx">Apply Leave</a></li>
+                    <li><a href="ApproveLeaves.aspx"> Approve Leave</a></li>
+                    <li><a href="LeaveHistory.aspx">Leave History</a></li>
+                    <li><a href="LeaveQuota.aspx">Leave Quota</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="nav-label">Recruitment</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="../RecruitmentMgt/PostingJob.aspx"> Job Posting </a>  </li>
+                    <li><a href="../RecruitmentMgt/ListOfCareers.aspx">List Of Careers</a></li>
+      
+                    <li><a href="../RecruitmentMgt/EmployeeReferal.aspx">Employee Referal</a></li>
+                    <li><a href="../RecruitmentMgt/IntimateHRReferal.aspx">Intimate HR Referals</a></li>
+                   
+                </ul>
+            </li>
+              <li>
+                <a href="#"><span class="nav-label">SalaryManagement</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="../SalaryMgt/Band A Payslip.aspx"> PaySlip </a>  </li>
+                    <li><a href="../SalaryMgt/PrintPreview.aspx">Print Preview</a></li>
+                    <li><a href="../SalaryMgt/Salary(Payslip).aspx">Salary Playslip</a></li>
+                   
+                </ul>
+            </li>
 
-							<p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-								printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-								remaining essentially unchanged.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-                        <li>
-		<a href="#"><span class="nav-label">Masters</span><span class="fa arrow"></span> </a>
-		<ul class="nav nav-second-level">
-			<li><a href="../Masters/DesignationMaster.aspx">Designation</a></li>
-			<li><a href="../Masters/DepartmentMaster.aspx">Department</a></li>
-			<li><a href="../Masters/LeavesMaster.aspx">Leaves</a></li>
-            <li><a href="../Masters/LoansMaster.aspx">Loans</a></li>
-            <li><a href="../Masters/GraduationMaster.aspx">Graduation</a></li>
-            <li><a href="../Masters/PostGraduationMaster.aspx">Post Graduation</a></li>
-              <li><a href="../Masters/DoctorateMaster.aspx">Doctorate</a></li>
-              <li><a href="../Masters/DomainMaster.aspx">Domain</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#"> <span class="nav-label">Report</span></a>
-	</li>
-</ul>
+            <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"> <span class="nav-label">Holiday List</span></a>
+            </li>
+             <div class="text-center">
+                                       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="color-line"></div>
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title">Holiday List</h4>
+                                    <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                </div>
+                                <div class="modal-body">
+
+                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                        remaining essentially unchanged.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <li>
+                <a href="#"> <span class="nav-label">Report</span></a>
+            </li>
+         
+
+        </ul>
     </div>
 </aside>
 
@@ -209,13 +210,13 @@
 			      <div class="form-group">
 			        <p>Type Of Leave</p>
 			        <span class="icon-case"><i class="fa fa-edit"></i></span>
-				    <asp:DropDownList ID="drpLeaveType" runat="server" class="dropdownlist">
+				    <asp:DropDownList ID="drpLeaveType" runat="server" AppendDataBoundItems="true" class="dropdownlist">
                                 
                             </asp:DropDownList>
                           <asp:RequiredFieldValidator InitialValue="--Select Below--" ID="Req_ID"
      runat="server"
-      ControlToValidate="drpLeaveType"
-       ErrorMessage="Field Required">
+      ControlToValidate="drpLeaveType" ForeColor="red"
+       ErrorMessage="*">
  </asp:RequiredFieldValidator>
        </div> 
 
@@ -223,7 +224,7 @@
 			<p>From Date</p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
 				 <asp:TextBox ID="TbFromDte" runat="server" ></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbFromDte" ErrorMessage="Field Required"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbFromDte" ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
                             <cc1:CalendarExtender ID="TbFromDte_CalendarExtender" runat="server" 
                                 Enabled="True" TargetControlID="TbFromDte">
                             </cc1:CalendarExtender>
@@ -235,11 +236,15 @@
 			<p>To Date </p>	
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
 				<asp:TextBox ID="TbToDate" runat="server" ></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TbToDate" ErrorMessage="Field Required"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TbToDate" ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
 
                             <cc1:CalendarExtender ID="TbToDate_CalendarExtender" runat="server" 
                                 Enabled="True" TargetControlID="TbToDate">
                             </cc1:CalendarExtender>
+                            <asp:CompareValidator ID="CompareValidator1" ValidationGroup="Date" ForeColor="Red"
+                                    runat="server" ControlToValidate="TbFromDte" ControlToCompare="TbToDate"
+                                    Operator="LessThan" Type="Date" Style="margin: 96px;" ErrorMessage="To Date must be greater than From Date"></asp:CompareValidator>
+
 			</div>
 
 
@@ -287,36 +292,7 @@
             <asp:Label ID="Label10" runat="server" Text="Please plan your leaves in advance and ensure that the system is updated before you go on leave." ForeColor="Red"></asp:Label>
    </div>
 
-            <div class="container">
-	<div class="row">
-		<div class="col-md-11 col-sm-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-                    <span class="pull-right">
-                        <!-- Tabs -->
-                        <ul class="nav panel-tabs">
-                            <li class="active"><a href="#tab1" data-toggle="tab">Leave</a></li>
-                            <li><a href="#tab2" data-toggle="tab">History</a></li>
-                            <li><a href="#tab3" data-toggle="tab">Calendar</a></li>
-                            <li><a href="#tab4" data-toggle="tab">Attendance </a></li>
-                        </ul>
-                    </span>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
-                        <div class="tab-pane" id="tab2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                        <div class="tab-pane" id="tab3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                        <div class="tab-pane" id="tab4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
-</div>
+       
 
 
 

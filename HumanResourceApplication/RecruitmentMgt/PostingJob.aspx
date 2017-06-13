@@ -156,25 +156,26 @@
             <p>Job ID</p>
             <span class="icon-case"><i class="fa fa-id-card"></i></span>
 				  <asp:TextBox ID="TbJobId" runat="server"></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbJobId" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbJobId" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 			</div>
             <div class="form-group">
 			<p>Job Title</p>
 			<span class="icon-case"><i class="fa fa-info"></i></span>
 			 <asp:TextBox ID="TbTitle" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TbTitle" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TbTitle" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 			</div>
             <div class="form-group">
 			<p>Job Descriptions</p>
 			<span class="icon-case"><i class="fa fa-edit"></i></span>
                <asp:TextBox ID="TbDesprtin" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TbDesprtin" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TbDesprtin" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>--%>
 			</div>
             <div class="form-group">
 			<p>Email Address</p>
 			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
 				   <asp:TextBox ID="TbEmail" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TbEmail" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TbEmail" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TbEmail" ErrorMessage="Enter a Valid Email Address" ForeColor="Red" style="margin:76px;" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
 			</div>
               <div class="form-group">
                                     <p>Educational Qualification</p>
@@ -201,7 +202,7 @@
 			<p>Number of Vacancies </p>	
 			<span class="icon-case"><i class="fa fa-users"></i></span>
                   <asp:TextBox ID="TbNofemp" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TbNofemp" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TbNofemp" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>--%>
                      <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
                         runat="server" ErrorMessage="Please Enter Valid Number"
                         ValidationGroup="ImageButton1" ControlToValidate="TbNofemp"
@@ -219,29 +220,30 @@
                         ToolTip="Select the domain for which u want to post the job">
                       
                      </asp:DropDownList>
-                     <asp:RequiredFieldValidator ID="Req_ID"
-                        ValidationGroup="ImageButton1" runat="server"
+                     <asp:RequiredFieldValidator ID="Req_ID" InitialValue="---Select Job Domain---"
+                         runat="server"
                         ControlToValidate="DrpDomain"
-                        ErrorMessage="Field Required" ForeColor="Red">
+                        ErrorMessage="*" ForeColor="Red">
                      </asp:RequiredFieldValidator>
 			</div>	
                 <div class="form-group">
 			<p>Skills</p>
 			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
 				  <asp:TextBox ID="TbSkills" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TbSkills" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TbSkills" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>--%>
 			</div>	
             <div class="form-group">
 			<p>Location</p>
 			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
                      <asp:TextBox ID="TbLocation" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TbLocation" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TbLocation" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
 			<div class="form-group">
 			<p>Contact Number</p>
 			<span class="icon-case"><i class="fa fa-phone"></i></span>
                      <asp:TextBox ID="txtContactNumber" runat="server" ></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtContactNumber" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtContactNumber" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtContactNumber" ErrorMessage="Enter a Valid Phone Number" ForeColor="Red" style="margin:76px;" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
                     </div>
         <div class="form-group">
                                     <p>Branch of Study</p>

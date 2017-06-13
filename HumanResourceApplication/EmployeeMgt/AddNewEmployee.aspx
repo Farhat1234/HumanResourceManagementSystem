@@ -155,19 +155,24 @@
                             <div class="form-group">
                                 <p>Employee ID</p>
                                 <span class="icon-case"><i class="fa fa-id-card"></i></span>
-                                <asp:TextBox ID="TbEmpID" runat="server" Enabled="true"></asp:TextBox>
+                                <asp:TextBox ID="TbEmpID" runat="server" Enabled="true" placeholder="Enter the Employee ID">
+                                    
+                                </asp:TextBox>
+                               
+                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TbEmpID" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <p>Department</p>
                                 <span class="icon-case"><i class="fa fa-user"></i></span>
                                 <asp:DropDownList ID="ddlDepartment" runat="server" class="dropdownlist">
                                 </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="ddlDepartment" InitialValue="---Select Department---" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <p>First Name</p>
                                 <span class="icon-case"><i class="fa fa-user"></i></span>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbEmpFname" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:TextBox ID="TbEmpFname" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TbEmpFname" runat="server" placeholder="Enter the First Name"></asp:TextBox>
                             </div>
                             <div class="form-group">
                                 <p>Gender</p>
@@ -176,12 +181,14 @@
                                     <asp:ListItem Text="Male" Value="Male"></asp:ListItem>
                                     <asp:ListItem Text="Female" Value="Female"></asp:ListItem>
                                 </asp:RadioButtonList>
+                              <%--  <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="gender" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>--%>
                             </div>
                             <div class="form-group">
                                 <p>Date of Joining</p>
                                 <span class="icon-case"><i class="fa fa-calendar"></i></span>
+                                <asp:TextBox ID="TbDOJ" runat="server" placeholder="Select the Date Of Joining"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TbDOJ" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:TextBox ID="TbDOJ" runat="server"></asp:TextBox>
+                                
                                 <cc1:CalendarExtender ID="TbDOJ_CalendarExtender" runat="server" Enabled="True"
                                     TargetControlID="TbDOJ">
                                 </cc1:CalendarExtender>
@@ -189,8 +196,10 @@
                             <div class="form-group">
                                 <p>Phone Number</p>
                                 <span class="icon-case"><i class="fa fa-phone"></i></span>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TbPhne" ErrorMessage="*" ForeColor="Red" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
-                                <asp:TextBox ID="TbPhne" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TbPhne" runat="server" placeholder="Enter the Phone Number"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TbPhne" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TbPhne" ErrorMessage="Enter a Valid Phone Number" ForeColor="Red" style="margin:76px;" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
+                                
                             </div>
                             <div class="form-group">
                                 <p>Blood Group</p>
@@ -206,26 +215,30 @@
                                     <asp:ListItem Text="AB+" Value="AB+"></asp:ListItem>
                                     <asp:ListItem Text="AB-" Value="AB-"></asp:ListItem>
                                 </asp:DropDownList>
+                                  <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="ddlDepartment" InitialValue="0" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                         </div>
                         <div class="rightcontact">
                             <div class="form-group">
                                 <p>Photo</p>
                                 <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="FileUpload1" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                                 <asp:FileUpload ID="FileUpload1" runat="server" OnLoad="FileUpload1_Load1" />
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="FileUpload1" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                                
                             </div>
                             <div class="form-group">
                                 <p>Designation</p>
                                 <span class="icon-case"><i class="fa fa-user"></i></span>
                                 <asp:DropDownList ID="DrpRole" runat="server" class="dropdownlist">
                                 </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="DrpRole" InitialValue="---Select Designation---" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <p>Last Name</p>
                                 <span class="icon-case"><i class="fa fa-user"></i></span>
+                                  <asp:TextBox ID="TbEmpLname" runat="server" placeholder="Enter the Last Name"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TbEmpLname" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:TextBox ID="TbEmpLname" runat="server"></asp:TextBox>
+                              
                             </div>
                             <div class="form-group">
                                 <p>Reporting Manager</p>
@@ -236,8 +249,9 @@
                             <div class="form-group">
                                 <p>Date of Birth</p>
                                 <span class="icon-case"><i class="fa fa-calendar"></i></span>
+                                <asp:TextBox ID="TbDOB" runat="server" placeholder="Select the Date Of Birth" ></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TbDOB" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:TextBox ID="TbDOB" runat="server"></asp:TextBox>
+                                
                                 <cc1:CalendarExtender ID="TbDOB_CalendarExtender" runat="server" Enabled="True"
                                     TargetControlID="TbDOB">
                                 </cc1:CalendarExtender>
@@ -245,8 +259,10 @@
                             <div class="form-group">
                                 <p>Email Address</p>
                                 <span class="icon-case"><i class="fa fa-envelope-open"></i></span>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbEmail" ErrorMessage="*" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                                <asp:TextBox ID="TbEmail" runat="server"></asp:TextBox>
+                                
+                                <asp:TextBox ID="TbEmail" runat="server" placeholder="Enter the Email Address"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TbEmail" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TbEmail" ErrorMessage="Enter a Valid Email Address" ForeColor="Red" style="margin:76px;" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                             </div>
                             <div class="form-group">
                                 <p>Upload Resume</p>
@@ -263,13 +279,15 @@
                             <div class="form-group">
                                 <p>Address</p>
                                 <span class="icon-case"><i class="fa fa-home"></i></span>
-                                <asp:TextBox ID="TbAddress" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TbAddress" runat="server" placeholder="Enter the Address"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TbAddress" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                             <div class="form-group">
                                 <p>State</p>
                                 <span class="icon-case"><i class="fa fa-building-o"></i></span>
                                 <asp:DropDownList ID="DrpState" runat="server" ToolTip="Please Select A State" class="dropdownlist" OnSelectedIndexChanged="DrpState_SelectedIndexChanged" AutoPostBack="True">
                                 </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="DrpState" InitialValue="---Select State---" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                         </div>
 
@@ -279,12 +297,15 @@
                                 <span class="icon-case"><i class="fa fa-building-o"></i></span>
                                 <asp:DropDownList ID="DrpCountry" runat="server" ToolTip="Please Select A Country" class="dropdownlist" OnSelectedIndexChanged="DrpCountry_SelectedIndexChanged" AutoPostBack="True">
                                 </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="DrpCountry" InitialValue="---Select Country---" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                                
                             </div>
                             <div class="form-group">
                                 <p>City</p>
                                 <span class="icon-case"><i class="fa fa-building-o"></i></span>
                                 <asp:DropDownList ID="DrpCity" runat="server" ToolTip="Please Select A City" class="dropdownlist">
                                 </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="DrpCity" InitialValue="---Select City---" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
 
                         </div>
@@ -296,7 +317,7 @@
                             <div class="form-group">
                                 <p>Address</p>
                                 <span class="icon-case"><i class="fa fa-home"></i></span>
-                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBox1" runat="server" placeholder="Enter the Address"></asp:TextBox>
                             </div>
 
                             <div class="form-group">
@@ -330,7 +351,7 @@
                             <div class="form-group">
                                 <p>Name</p>
                                 <span class="icon-case"><i class="fa fa-male"></i></span>
-                                <asp:TextBox ID="txtRefName" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtRefName" runat="server" placeholder="Enter the Name "></asp:TextBox>
                             </div>
                             <div class="form-group">
                                 <p>Designation</p>
@@ -343,12 +364,12 @@
                             <div class="form-group">
                                 <p>Contact Number</p>
                                 <span class="icon-case"><i class="fa fa-phone"></i></span>
-                                <asp:TextBox ID="txtRefContact" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtRefContact" runat="server" placeholder="Enter the Contact Number"></asp:TextBox>
                             </div>
                             <div class="form-group">
                                 <p>Company Name</p>
                                 <span class="icon-case"><i class="fa fa-building-o"></i></span>
-                                <asp:TextBox ID="txtRefCompanyName" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtRefCompanyName" runat="server" placeholder="Enter the Company Name"></asp:TextBox>
                             </div>
                         </div>
                     </div>

@@ -204,7 +204,7 @@
             <div class="form-group">
             <p>Bank Name </p>
             <span class="icon-case"><i class="fa fa-building-o"></i></span>
-                 <asp:TextBox ID="txtBankName" runat="server"></asp:TextBox>
+                 <asp:TextBox ID="txtBankName" runat="server" placeholder="Enter Bank Name"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtBankName" ErrorMessage="*" ForeColor="Red" />
 
 			</div>
@@ -231,19 +231,19 @@
                      <div class="form-group">
             <p>Branch</p>
             <span class="icon-case"><i class="fa fa-info"></i></span>
-				 <asp:TextBox ID="txtSBranch" runat="server"></asp:TextBox>
+				 <asp:TextBox ID="txtSBranch" runat="server" placeholder="Enter the Branch"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtSBranch" ErrorMessage="*" ForeColor="Red" />
 			</div>
 			<div class="form-group">
 			<p>IFSC Code </p>
 			<span class="icon-case"><i class="fa fa-info"></i></span>
-				 <asp:TextBox ID="txtSIFSC" runat="server"></asp:TextBox>
+				 <asp:TextBox ID="txtSIFSC" runat="server" placeholder="Enter the IFSC Code"></asp:TextBox>
                  <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtSIFSC" ErrorMessage="*" ForeColor="Red" />
 			</div>
                      <div class="form-group">
 			<p>Account Number</p>	
 			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-                   <asp:TextBox ID="txtAccNo" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="txtAccNo" runat="server" placeholder="Enter the Account Number"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtAccNo" ErrorMessage="*" ForeColor="Red" />
         
 			</div>	
@@ -260,7 +260,7 @@
 			      <div class="form-group">
 			        <p>Account Type</p>
 			        <span class="icon-case"><i class="fa fa-male"></i></span>
-                       <asp:TextBox ID="txtRAccType" runat="server" Text="Reimbursement Account" Enabled="false" ></asp:TextBox>
+                       <asp:TextBox ID="txtRAccType" runat="server" Text="Reimbursement Account" Enabled="false" placeholder="Enter the Account Type" ></asp:TextBox>
 			
                 <div class="validation"></div>
                     </div> 
@@ -268,7 +268,7 @@
             <div class="form-group">
             <p>Bank Name </p>
             <span class="icon-case"><i class="fa fa-building-o"></i></span>
-                 <asp:TextBox ID="txtRBankName" runat="server"></asp:TextBox>
+                 <asp:TextBox ID="txtRBankName" runat="server" placeholder="Enter Bank Name"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtRBankName" ErrorMessage="*" ForeColor="Red" />
 	
 			</div>
@@ -298,20 +298,20 @@
         <div class="form-group">
             <p>Branch</p>
             <span class="icon-case"><i class="fa fa-info"></i></span>
-				 <asp:TextBox ID="txtRBranch" runat="server"></asp:TextBox>
+				 <asp:TextBox ID="txtRBranch" runat="server" placeholder="Enter the Branch"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtRBranch" ErrorMessage="*" ForeColor="Red" />
 			</div>
 			<div class="form-group">
 			<p>IFSC Code </p>
 			<span class="icon-case"><i class="fa fa-info"></i></span>
-				 <asp:TextBox ID="txtRIFSC" runat="server"></asp:TextBox>
+				 <asp:TextBox ID="txtRIFSC" runat="server" placeholder="Enter the IFSC Code"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtRIFSC" ErrorMessage="*" ForeColor="Red" />
 			</div>
 
 			<div class="form-group">
 			<p>Account Number</p>	
 			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-                 <asp:TextBox ID="txtRAccNo" runat="server"></asp:TextBox>
+                 <asp:TextBox ID="txtRAccNo" runat="server" placeholder="Enter the Account Number"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtRAccNo" ErrorMessage="*" ForeColor="Red" />
       
 			</div>	

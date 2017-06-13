@@ -168,14 +168,14 @@
 			        <p>Employee ID</p>
 			        <span class="icon-case"><i class="fa fa-id-card"></i></span>
 				                 <asp:TextBox ID="TbEmpID" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbEmpID" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TbEmpID" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
        </div> 
 
             <div class="form-group">
             <p>Employee Name</p>
             <span class="icon-case"><i class="fa fa-user"></i></span>
 				 <asp:TextBox ID="TbEmpName" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TbEmpName" ErrorMessage="Field Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TbEmpName" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 			</div>
 
 			<div class="form-group">
@@ -184,7 +184,7 @@
                 <asp:DropDownList ID="DrpDesignation" runat="server" class="dropdownlist">
                                 
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DrpDesignation" ErrorMessage="Field Required" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DrpDesignation" ErrorMessage="*" ForeColor="Red" InitialValue="---Select Department---"></asp:RequiredFieldValidator>
 			</div>	
 
 			<div class="form-group">
@@ -215,7 +215,7 @@
 				   <asp:DropDownList ID="DrpMonth" runat="server" class="dropdownlist">
                                 <asp:ListItem>May</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DrpMonth" ErrorMessage="Field Required" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DrpMonth" ErrorMessage="*" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
 			</div>	
 
 			<div class="form-group">
@@ -224,7 +224,7 @@
 				    <asp:DropDownList ID="DrpYear" runat="server" class="dropdownlist">
                                 <asp:ListItem>2014</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DrpYear" ErrorMessage="Field Required" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DrpYear" ErrorMessage="*" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
 			</div>
 
 			<div class="form-group">
@@ -233,8 +233,20 @@
                  <asp:DropDownList ID="DrpDate" runat="server" class="dropdownlist">
                                 <asp:ListItem>05/05/2014</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="DrpDate" ErrorMessage="Field Required" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="DrpDate" ErrorMessage="*" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
 			</div>
+
+       <%-- <div class="form-group">
+			<p>Date</p>
+			<span class="icon-case"><i class="fa fa-calendar"></i></span>
+                 <asp:TextBox ID="cal" runat="server" placeholder="Select the Date"></asp:TextBox>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+                <cc1:CalendarExtender ID="TbDOB_CalendarExtender" runat="server" Enabled="True"
+                                    TargetControlID="cal">
+                                </cc1:CalendarExtender>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="cal" ErrorMessage="*" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
+			</div>--%>
 
 			<div class="form-group">
 			<p>Out Time</p>	

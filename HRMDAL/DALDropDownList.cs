@@ -10,6 +10,31 @@ namespace HRMDAL
 {
     public class DALDropDownList
     {
+        public static DataTable NIOType()
+        {
+            string connection = ConfigurationManager.ConnectionStrings["HumanResourceConnectionString"].ConnectionString;
+            //  bool status = false;  
+            SqlConnection con = new SqlConnection(connection);
+            SqlCommand cmd = new SqlCommand("select * from NotInOffice;", con);
+            con.Open();
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = null;
+            if (dr.HasRows)
+            {
+                dt = new DataTable("NotInOffice");
+                dt.Load(dr);
+                //   status = true;  
+                return dt;
+            }
+            if (cmd != null)
+            {
+                cmd.Dispose();
+                cmd = null;
+            }
+            return dt;
+        }
+
         public static DataTable CountryList()
         {
             string connection = ConfigurationManager.ConnectionStrings["HumanResourceConnectionString"].ConnectionString;
@@ -336,31 +361,5 @@ namespace HRMDAL
             }
             return dt;
         }
-
-        public static DataTable NIOType()
-        {
-            string connection = ConfigurationManager.ConnectionStrings["HumanResourceConnectionString"].ConnectionString;
-            //  bool status = false;  
-            SqlConnection con = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand("select * from NotInOffice;", con);
-            con.Open();
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader dr = cmd.ExecuteReader();
-            DataTable dt = null;
-            if (dr.HasRows)
-            {
-                dt = new DataTable("NotInOffice");
-                dt.Load(dr);
-                //   status = true;  
-                return dt;
-            }
-            if (cmd != null)
-            {
-                cmd.Dispose();
-                cmd = null;
-            }
-            return dt;
-        }
-
     }
 }
