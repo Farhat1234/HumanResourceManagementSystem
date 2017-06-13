@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="HRMS"  description="">
+        <siteMapNode url="" title="Development (70)"  description="" >
+          <siteMapNode url="" title="JAVA(20)"  description=""/>
+            <siteMapNode url="" title=".NET(35)"  description=""/>
+              <siteMapNode url="" title="PHP(15)"  description=""/>
+        </siteMapNode>
+      <siteMapNode url="" title="Testing (10)"  description="" />
+    <siteMapNode url="" title="Technical Support (5)"  description="" />
+    </siteMapNode>
+</siteMap>

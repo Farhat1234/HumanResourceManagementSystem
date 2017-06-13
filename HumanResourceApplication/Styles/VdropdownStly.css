@@ -1,0 +1,49 @@
+﻿body {
+}
+nav {
+    /* Repeating background image */
+    background: url(http://weebtutorials.com/wp-content/uploads/2012/11/a.png);
+    width:210px;
+    margin:20px;
+}
+ 
+nav ul {
+    /* Removes bullet points */
+    list-style:none;
+    margin:0;
+    padding:0;
+ 
+}
+nav ul li {
+    /* Any child positioned absolutely will be positioned relative to this */
+    position:relative;
+}
+nav a {
+    color:#e8e8e8;
+    padding:12px 0px;
+    /* Fill all available horizontal space */
+    display:block;
+    /* Remove underline */
+    text-decoration:none;
+    /* 
+    New CSS3 animations:
+    apply transition to background property, taking 1s to change it 
+    */
+    transition:background 1s;
+    -moz-transition:background 1s;
+    -webkit-transition:background 1s;
+    -o-transition:background 1s;
+    font-family:tahoma;
+    font-size:13px;
+    text-transform:uppercase;
+    padding-left:20px;
+}
+nav a:hover {
+    /* 
+    RGBA background for transparancy: 
+    last number(0.05) is the transparency 
+    */
+    background: RGBA(255,255,255,0.05);
+    color:#fff;
+}
+

@@ -1,0 +1,125 @@
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\HRMWcfService1.dll
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\HRMWcfService1.pdb
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\HRMDAL.dll
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\HRMDAL.pdb
+D:\prog\HumanResourceApplication\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+D:\prog\HumanResourceApplication\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+D:\prog\HumanResourceApplication\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\HumanResourceApplication.dll
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\AjaxControlToolkit.dll
+D:\prog\HumanResourceApplication\HRMWcfService1\bin\HumanResourceApplication.pdb
+H:\HumanResourceApplication\HRMWcfService1\bin\HRMWcfService1.dll
+H:\HumanResourceApplication\HRMWcfService1\bin\HRMWcfService1.pdb
+H:\HumanResourceApplication\HRMWcfService1\bin\HRMDAL.dll
+H:\HumanResourceApplication\HRMWcfService1\bin\HRMDAL.pdb
+H:\HumanResourceApplication\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+H:\HumanResourceApplication\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+H:\HumanResourceApplication\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+H:\HumanResourceApplication\HRMWcfService1\bin\HumanResourceApplication.dll
+H:\HumanResourceApplication\HRMWcfService1\bin\AjaxControlToolkit.dll
+H:\HumanResourceApplication\HRMWcfService1\bin\HumanResourceApplication.pdb
+D:\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll
+D:\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.pdb
+D:\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.dll
+D:\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.dll
+D:\HumanResourceApplication bk\HRMWcfService1\bin\AjaxControlToolkit.dll
+D:\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.pdb
+D:\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.pdb
+D:\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+D:\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+D:\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll.config
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.pdb
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.dll
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.dll
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\AjaxControlToolkit.dll
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.pdb
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.pdb
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+D:\HRMS\HRMS\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll.config
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.pdb
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.dll
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.dll
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\AjaxControlToolkit.dll
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.pdb
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.pdb
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+C:\Users\Dell\Desktop\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll.config
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.pdb
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\AjaxControlToolkit.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.pdb
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.pdb
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+D:\HumanResourceApplicationNew\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll.config
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.dll
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HRMWcfService1.pdb
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.dll
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.dll
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\AjaxControlToolkit.dll
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HRMDAL.pdb
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\bin\HumanResourceApplication.pdb
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+C:\Users\Saania Sayed\Desktop\HumanResourceApplication bk\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HRMWcfService1.dll.config
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HRMWcfService1.dll
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HRMWcfService1.pdb
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HRMDAL.dll
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HumanResourceApplication.dll
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\AjaxControlToolkit.dll
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HRMDAL.pdb
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\bin\HumanResourceApplication.pdb
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+C:\Users\Dell\Desktop\HRM 12-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HRMWcfService1.dll.config
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HRMWcfService1.dll
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HRMWcfService1.pdb
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HRMDAL.dll
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HRMDAL.pdb
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HumanResourceApplication.dll
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\AjaxControlToolkit.dll
+D:\Projects\HRMS\HRM 12-06-2017\HRMWcfService1\bin\HumanResourceApplication.pdb
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HRMWcfService1.dll.config
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HRMWcfService1.dll
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HRMWcfService1.pdb
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HRMDAL.dll
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HumanResourceApplication.dll
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\AjaxControlToolkit.dll
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HRMDAL.pdb
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\bin\HumanResourceApplication.pdb
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+C:\Users\Chandana\Desktop\HRM 13-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.pdb
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HRMWcfService1.dll.config
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HRMWcfService1.dll
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HRMWcfService1.pdb
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HRMDAL.dll
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HumanResourceApplication.dll
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\Microsoft.ReportViewer.Common.dll
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\AjaxControlToolkit.dll
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HRMDAL.pdb
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\bin\HumanResourceApplication.pdb
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.csprojResolveAssemblyReference.cache
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.dll
+D:\Projects\HRMS\HRM 13-06-2017\HRMWcfService1\obj\Debug\HRMWcfService1.pdb

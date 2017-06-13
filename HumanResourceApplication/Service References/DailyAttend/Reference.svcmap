@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="71ceb4c7-8238-4692-84ff-1fb075590e48" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49595/DailyAttendance.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DailyAttendance.xsd" MetadataType="Schema" ID="6ec47fe5-4011-4377-ba73-bfc00ddb58f7" SourceId="1" SourceUrl="http://localhost:49595/DailyAttendance.svc?xsd=xsd2" />
+    <MetadataFile FileName="DailyAttendance1.xsd" MetadataType="Schema" ID="938f120e-2a92-4d52-8e62-9e755ead1d41" SourceId="1" SourceUrl="http://localhost:49595/DailyAttendance.svc?xsd=xsd1" />
+    <MetadataFile FileName="DailyAttendance.wsdl" MetadataType="Wsdl" ID="c078dcd7-5532-468d-9607-f6ad3ff61a80" SourceId="1" SourceUrl="http://localhost:49595/DailyAttendance.svc?wsdl" />
+    <MetadataFile FileName="DailyAttendance2.xsd" MetadataType="Schema" ID="d9b7ac88-7674-49d6-8afa-8540c79fb6b9" SourceId="1" SourceUrl="http://localhost:49595/DailyAttendance.svc?xsd=xsd0" />
+    <MetadataFile FileName="DailyAttendance.disco" MetadataType="Disco" ID="8e800606-f0d1-46eb-b5bf-bd97f48b00a7" SourceId="1" SourceUrl="http://localhost:49595/DailyAttendance.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

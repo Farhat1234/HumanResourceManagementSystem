@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0ff7313c-977b-4ff5-85b1-a506e7d75152" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49595/EmpSea.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmpSea.xsd" MetadataType="Schema" ID="04dc7a4b-3528-49fa-863d-8e3361a4ead9" SourceId="1" SourceUrl="http://localhost:49595/EmpSea.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmpSea1.xsd" MetadataType="Schema" ID="d86fb852-e429-4f19-b3f8-97589e6c06a8" SourceId="1" SourceUrl="http://localhost:49595/EmpSea.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmpSea2.xsd" MetadataType="Schema" ID="cd5ef32b-9bd9-481a-8ec2-f81a4d38ded9" SourceId="1" SourceUrl="http://localhost:49595/EmpSea.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmpSea.disco" MetadataType="Disco" ID="295c0fea-92e1-4d32-8dac-a14a592d4d58" SourceId="1" SourceUrl="http://localhost:49595/EmpSea.svc?disco" />
+    <MetadataFile FileName="EmpSea.wsdl" MetadataType="Wsdl" ID="b8a51a60-860f-44aa-b62c-b339ea9d036c" SourceId="1" SourceUrl="http://localhost:49595/EmpSea.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

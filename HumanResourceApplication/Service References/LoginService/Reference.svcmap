@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a2f070e8-0bc8-422a-a1c8-80883c28ba0b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49595/Login.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Login.disco" MetadataType="Disco" ID="2b8722b7-ccd2-45ee-9918-09b5e2eee56e" SourceId="1" SourceUrl="http://localhost:49595/Login.svc?disco" />
+    <MetadataFile FileName="Login.wsdl" MetadataType="Wsdl" ID="2d26dedc-10cd-48c1-97ce-e67bcc26417b" SourceId="1" SourceUrl="http://localhost:49595/Login.svc?wsdl" />
+    <MetadataFile FileName="Login.xsd" MetadataType="Schema" ID="3ce5e496-4261-409a-b71b-b6903d80521d" SourceId="1" SourceUrl="http://localhost:49595/Login.svc?xsd=xsd1" />
+    <MetadataFile FileName="Login1.xsd" MetadataType="Schema" ID="88362b14-e6c7-4467-b287-f538f150a950" SourceId="1" SourceUrl="http://localhost:49595/Login.svc?xsd=xsd0" />
+    <MetadataFile FileName="Login2.xsd" MetadataType="Schema" ID="6bf3cff6-76f7-41fd-a3fa-2ba8b3af11d0" SourceId="1" SourceUrl="http://localhost:49595/Login.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A43529E-5130-4D1F-A3B7-8CB2FB8D792D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HumanResourceApplication</RootNamespace>
+    <AssemblyName>HumanResourceApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20229.34912, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.VS2010.10.0.40219.1\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms_v10.1.0.0\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AttendanceMgt\ApplyAttendance.aspx" />
+    <Content Include="AttendanceMgt\ApplyOnDuty.aspx" />
+    <Content Include="AttendanceMgt\OnDutyHistory.aspx" />
+    <Content Include="AttendanceMgt\ConsolidateAttandance.aspx" />
+    <Content Include="EmployeeMgt\AddNewEmployee.aspx" />
+    <Content Include="EmployeeMgt\EmployeeBankDetails.aspx" />
+    <Content Include="EmployeeMgt\EmployeeEdit.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EmployeeMgt\EmployeeEducation.aspx" />
+    <Content Include="EmployeeMgt\EmployeeFamilyNominations.aspx" />
+    <Content Include="EmployeeMgt\EmployeeITProof.aspx" />
+    <Content Include="EmployeeMgt\EmployeeLoansAdvances.aspx" />
+    <Content Include="EmployeeMgt\EmployeePassport.aspx" />
+    <Content Include="EmployeeMgt\EmployeeReportingManager.aspx" />
+    <Content Include="EmployeeMgt\EmployeeSearch.aspx" />
+    <Content Include="fonts\pe-icon-7-stroke\css\helper.css" />
+    <Content Include="fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="Images\a1.jpg" />
+    <Content Include="Images\a2.jpg" />
+    <Content Include="Images\a3.jpg" />
+    <Content Include="Images\a4.jpg" />
+    <Content Include="Images\a5.jpg" />
+    <Content Include="Images\a6.jpg" />
+    <Content Include="Images\a7.jpg" />
+    <Content Include="Images\a9.jpg" />
+    <Content Include="Images\aply.jpg" />
+    <Content Include="Images\article-1279179699092-0a7099f6000005dc-995704_636x721.jpg" />
+    <Content Include="Images\Attendance_NEW.png" />
+    <Content Include="Images\Calcalutae.jpg" />
+    <Content Include="Images\compoffNEW.png" />
+    <Content Include="Images\download %281%29.jpg" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\Employee Databank_NEW.png" />
+    <Content Include="Images\icon-add.gif" />
+    <Content Include="Images\images %281%29.jpg" />
+    <Content Include="Images\images %282%29.jpg" />
+    <Content Include="Images\images %283%29.jpg" />
+    <Content Include="Images\images %284%29.jpg" />
+    <Content Include="Images\images %285%29.jpg" />
+    <Content Include="Images\images %286%29.jpg" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\leave_NEW.png" />
+    <Content Include="Images\LetterTemplate.png" />
+    <Content Include="Images\light-skin.png" />
+    <Content Include="Images\login-bg.jpg" />
+    <Content Include="Images\login2.jpg" />
+    <Content Include="Images\monotone_arrow_next_right %281%29.png" />
+    <Content Include="Images\profile.jpg" />
+    <Content Include="Images\searchbtn.jpg" />
+    <Content Include="Images\subbtn.jpg" />
+    <Content Include="Images\traitlogo.png" />
+    <Content Include="Images\traitpunch.png" />
+    <Content Include="Images\update.jpg" />
+    <Content Include="Images\view.jpg" />
+    <Content Include="Images\x.png" />
+    <Content Include="index.html" />
+    <Content Include="LeaveMgt\ApplyLeave.aspx" />
+    <Content Include="LeaveMgt\LeaveQuota.aspx" />
+    <Content Include="LeaveMgt\LeaveHistory.aspx" />
+    <Content Include="LeaveMgt\ApproveLeaves.aspx" />
+    <Content Include="main.js" />
+    <Content Include="Masters\DepartmentMaster.aspx" />
+    <Content Include="Masters\DesignationMaster.aspx" />
+    <Content Include="Masters\DoctorateMaster.aspx" />
+    <Content Include="Masters\DomainMaster.aspx" />
+    <Content Include="Masters\GraduationMaster.aspx" />
+    <Content Include="Masters\LeavesMaster.aspx" />
+    <Content Include="Masters\LoansMaster.aspx" />
+    <Content Include="Masters\PostGraduationMaster.aspx" />
+    <Content Include="RecruitmentMgt\EmployeeReferal.aspx" />
+    <Content Include="RecruitmentMgt\IntimateHRReferal.aspx" />
+    <Content Include="RecruitmentMgt\ListOfCareers.aspx" />
+    <Content Include="RecruitmentMgt\PostingJob.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Images\a[1].cache" />
+    <Content Include="SalaryMgt\Band A Payslip.aspx" />
+    <Content Include="SalaryMgt\PrintPreview.aspx" />
+    <Content Include="SalaryMgt\Salary%28Payslip%29.aspx" />
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.woff" />
+    <None Include="Service References\DailyAttend\DailyAttendance.disco" />
+    <None Include="Service References\DailyAttend\configuration91.svcinfo" />
+    <None Include="Service References\DailyAttend\configuration.svcinfo" />
+    <None Include="Service References\DailyAttend\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="scripts\charts.js" />
+    <Content Include="scripts\homer.js" />
+    <Content Include="Service References\EmpSea\HumanResourceApplication.EmpSea.EmployeeSearch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Styles\form.css" />
+    <Content Include="Styles\img\green.png" />
+    <Content Include="Styles\style.css" />
+    <Content Include="vendor\animate.css\animate.css" />
+    <Content Include="vendor\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="vendor\flot.curvedlines\curvedLines.js" />
+    <Content Include="vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="vendor\iCheck\icheck.min.js" />
+    <Content Include="vendor\jquery-flot\jquery.flot.js" />
+    <Content Include="vendor\jquery-flot\jquery.flot.pie.js" />
+    <Content Include="vendor\jquery-flot\jquery.flot.resize.js" />
+    <Content Include="vendor\jquery-ui\jquery-ui.min.js" />
+    <Content Include="vendor\jquery.flot.spline\index.js" />
+    <Content Include="vendor\jquery\dist\jquery.min.js" />
+    <Content Include="vendor\metisMenu\dist\metisMenu.css" />
+    <Content Include="vendor\metisMenu\dist\metisMenu.min.js" />
+    <Content Include="vendor\peity\jquery.peity.min.js" />
+    <Content Include="vendor\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="vendor\sparkline\index.js" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Service References\EmpSea\HumanResourceApplication.EmpSea.EmlpoyeeSeachEditEmp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\EmpSea\HumanResourceApplication.EmpSea.Salary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\EmpSea\HumanResourceApplication.EmpSea.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="WebForm2.aspx" />
+    <None Include="Service References\DailyAttend\DailyAttendance.wsdl" />
+    <None Include="Service References\DailyAttend\DailyAttendance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DailyAttend\DailyAttendance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DailyAttend\DailyAttendance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\HRMRef\HumanResourceApplication.HRMRef.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HRMRef\HumanResourceApplication.HRMRef.City.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HRMRef\HumanResourceApplication.HRMRef.StateCity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\EmpSea\HumanResourceApplication.EmpSea.EmployeeEdit.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\jobservice\JOB.disco" />
+    <None Include="Service References\jobservice\configuration91.svcinfo" />
+    <None Include="Service References\jobservice\configuration.svcinfo" />
+    <None Include="Service References\jobservice\JOB3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\jobservice\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EmpSea\EmpSea.disco" />
+    <None Include="Service References\EmpSea\configuration91.svcinfo" />
+    <None Include="Service References\EmpSea\configuration.svcinfo" />
+    <None Include="Service References\EmpSea\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\LoginService\HumanResourceApplication.LoginService.Login.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\jobservice\JOB.wsdl" />
+    <None Include="Service References\jobservice\JOB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\jobservice\JOB1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\jobservice\JOB2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpSea\EmpSea.wsdl" />
+    <None Include="Service References\EmpSea\EmpSea.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpSea\EmpSea1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpSea\EmpSea2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginService\Login.wsdl" />
+    <None Include="Service References\LoginService\Login.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginService\Login1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginService\Login2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\ApplyLeave.disco" />
+    <None Include="Service References\ServiceReference1\ApplyLeave3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\LoginService\Login.disco" />
+    <None Include="Service References\LoginService\configuration91.svcinfo" />
+    <None Include="Service References\LoginService\configuration.svcinfo" />
+    <None Include="Service References\LoginService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\HRMRef\Service1.disco" />
+    <None Include="Service References\HRMRef\configuration91.svcinfo" />
+    <None Include="Service References\HRMRef\configuration.svcinfo" />
+    <None Include="Service References\HRMRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ReportMgt\WebForm1.aspx" />
+    <Content Include="Styles\StyingDrop.css" />
+    <Content Include="Styles\VdropdownStly.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\ServiceReference1\ApplyLeave.wsdl" />
+    <None Include="Service References\ServiceReference1\ApplyLeave.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\ApplyLeave1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\ApplyLeave2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttendanceMgt\ApplyAttendance.aspx.cs">
+      <DependentUpon>ApplyAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceMgt\ApplyAttendance.aspx.designer.cs">
+      <DependentUpon>ApplyAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceMgt\ApplyOnDuty.aspx.cs">
+      <DependentUpon>ApplyOnDuty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceMgt\ApplyOnDuty.aspx.designer.cs">
+      <DependentUpon>ApplyOnDuty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceMgt\OnDutyHistory.aspx.cs">
+      <DependentUpon>OnDutyHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceMgt\OnDutyHistory.aspx.designer.cs">
+      <DependentUpon>OnDutyHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceMgt\ConsolidateAttandance.aspx.cs">
+      <DependentUpon>ConsolidateAttandance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceMgt\ConsolidateAttandance.aspx.designer.cs">
+      <DependentUpon>ConsolidateAttandance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\AddNewEmployee.aspx.cs">
+      <DependentUpon>AddNewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\AddNewEmployee.aspx.designer.cs">
+      <DependentUpon>AddNewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeBankDetails.aspx.cs">
+      <DependentUpon>EmployeeBankDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeBankDetails.aspx.designer.cs">
+      <DependentUpon>EmployeeBankDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeEdit.aspx.cs">
+      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeEdit.aspx.designer.cs">
+      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeEducation.aspx.cs">
+      <DependentUpon>EmployeeEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeEducation.aspx.designer.cs">
+      <DependentUpon>EmployeeEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeFamilyNominations.aspx.cs">
+      <DependentUpon>EmployeeFamilyNominations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeFamilyNominations.aspx.designer.cs">
+      <DependentUpon>EmployeeFamilyNominations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeITProof.aspx.cs">
+      <DependentUpon>EmployeeITProof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeITProof.aspx.designer.cs">
+      <DependentUpon>EmployeeITProof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeLoansAdvances.aspx.cs">
+      <DependentUpon>EmployeeLoansAdvances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeLoansAdvances.aspx.designer.cs">
+      <DependentUpon>EmployeeLoansAdvances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeePassport.aspx.cs">
+      <DependentUpon>EmployeePassport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeePassport.aspx.designer.cs">
+      <DependentUpon>EmployeePassport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeReportingManager.aspx.cs">
+      <DependentUpon>EmployeeReportingManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeReportingManager.aspx.designer.cs">
+      <DependentUpon>EmployeeReportingManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeSearch.aspx.cs">
+      <DependentUpon>EmployeeSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMgt\EmployeeSearch.aspx.designer.cs">
+      <DependentUpon>EmployeeSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveMgt\ApplyLeave.aspx.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveMgt\ApplyLeave.aspx.designer.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveMgt\LeaveQuota.aspx.cs">
+      <DependentUpon>LeaveQuota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveMgt\LeaveQuota.aspx.designer.cs">
+      <DependentUpon>LeaveQuota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveMgt\LeaveHistory.aspx.cs">
+      <DependentUpon>LeaveHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveMgt\LeaveHistory.aspx.designer.cs">
+      <DependentUpon>LeaveHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveMgt\ApproveLeaves.aspx.cs">
+      <DependentUpon>ApproveLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveMgt\ApproveLeaves.aspx.designer.cs">
+      <DependentUpon>ApproveLeaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DepartmentMaster.aspx.cs">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\DepartmentMaster.aspx.designer.cs">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DesignationMaster.aspx.cs">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\DesignationMaster.aspx.designer.cs">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DoctorateMaster.aspx.cs">
+      <DependentUpon>DoctorateMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\DoctorateMaster.aspx.designer.cs">
+      <DependentUpon>DoctorateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DomainMaster.aspx.cs">
+      <DependentUpon>DomainMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\DomainMaster.aspx.designer.cs">
+      <DependentUpon>DomainMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\GraduationMaster.aspx.cs">
+      <DependentUpon>GraduationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\GraduationMaster.aspx.designer.cs">
+      <DependentUpon>GraduationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\LeavesMaster.aspx.cs">
+      <DependentUpon>LeavesMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\LeavesMaster.aspx.designer.cs">
+      <DependentUpon>LeavesMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\LoansMaster.aspx.cs">
+      <DependentUpon>LoansMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\LoansMaster.aspx.designer.cs">
+      <DependentUpon>LoansMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\PostGraduationMaster.aspx.cs">
+      <DependentUpon>PostGraduationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\PostGraduationMaster.aspx.designer.cs">
+      <DependentUpon>PostGraduationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecruitmentMgt\EmployeeReferal.aspx.cs">
+      <DependentUpon>EmployeeReferal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecruitmentMgt\EmployeeReferal.aspx.designer.cs">
+      <DependentUpon>EmployeeReferal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecruitmentMgt\IntimateHRReferal.aspx.cs">
+      <DependentUpon>IntimateHRReferal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecruitmentMgt\IntimateHRReferal.aspx.designer.cs">
+      <DependentUpon>IntimateHRReferal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecruitmentMgt\ListOfCareers.aspx.cs">
+      <DependentUpon>ListOfCareers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecruitmentMgt\ListOfCareers.aspx.designer.cs">
+      <DependentUpon>ListOfCareers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecruitmentMgt\PostingJob.aspx.cs">
+      <DependentUpon>PostingJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecruitmentMgt\PostingJob.aspx.designer.cs">
+      <DependentUpon>PostingJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportMgt\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportMgt\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryMgt\Band A Payslip.aspx.cs">
+      <DependentUpon>Band A Payslip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalaryMgt\Band A Payslip.aspx.designer.cs">
+      <DependentUpon>Band A Payslip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryMgt\PrintPreview.aspx.cs">
+      <DependentUpon>PrintPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalaryMgt\PrintPreview.aspx.designer.cs">
+      <DependentUpon>PrintPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryMgt\Salary%28Payslip%29.aspx.cs">
+      <DependentUpon>Salary%28Payslip%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalaryMgt\Salary%28Payslip%29.aspx.designer.cs">
+      <DependentUpon>Salary%28Payslip%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DailyAttend\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HRMRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\jobservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EmpSea\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LoginService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DailyAttend\" />
+    <WCFMetadataStorage Include="Service References\HRMRef\" />
+    <WCFMetadataStorage Include="Service References\jobservice\" />
+    <WCFMetadataStorage Include="Service References\EmpSea\" />
+    <WCFMetadataStorage Include="Service References\LoginService\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HRMRef\Service1.wsdl" />
+    <None Include="Service References\HRMRef\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HRMRef\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HRMRef\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="SalaryMgt\Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRMWcfService1\HRMWcfService1.csproj">
+      <Project>{ba6a9d86-5fb6-445f-b39f-8f3e8226c8f5}</Project>
+      <Name>HRMWcfService1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49542</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49542/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

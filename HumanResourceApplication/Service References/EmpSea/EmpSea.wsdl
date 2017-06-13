@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmpSea" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49595/EmpSea.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49595/EmpSea.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49595/EmpSea.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HRMDAL.Entites" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmpSea_EmpSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpSearch" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmpSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmpSearchName_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpSearchName" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmpSearchName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpSearchNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_RetriveDesignation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetriveDesignation" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_RetriveDesignation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetriveDesignationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_RetriveDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetriveDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_RetriveDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetriveDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_RetriveEmpID_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetriveEmpID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_RetriveEmpID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetriveEmpIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_SalaryGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:SalaryGrid" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_SalaryGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SalaryGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_CheckPanCardIDExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPanCardIDExist" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_CheckPanCardIDExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPanCardIDExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmpSearchDepDes_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpSearchDepDes" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmpSearchDepDes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpSearchDepDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_AddEditEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddEditEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_AddEditEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddEditEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_ViewDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewDetail" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_ViewDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmployUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_EmployUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_CheckEmpIDEdit_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmpIDEdit" />
+  </wsdl:message>
+  <wsdl:message name="IEmpSea_CheckEmpIDEdit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmpIDEditResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmpSea">
+    <wsdl:operation name="EmpSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/EmpSearch" message="tns:IEmpSea_EmpSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/EmpSearchResponse" message="tns:IEmpSea_EmpSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpSearchName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/EmpSearchName" message="tns:IEmpSea_EmpSearchName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/EmpSearchNameResponse" message="tns:IEmpSea_EmpSearchName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveDesignation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/RetriveDesignation" message="tns:IEmpSea_RetriveDesignation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/RetriveDesignationResponse" message="tns:IEmpSea_RetriveDesignation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/RetriveDepartment" message="tns:IEmpSea_RetriveDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/RetriveDepartmentResponse" message="tns:IEmpSea_RetriveDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetriveEmpID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/RetriveEmpID" message="tns:IEmpSea_RetriveEmpID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/RetriveEmpIDResponse" message="tns:IEmpSea_RetriveEmpID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SalaryGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/SalaryGrid" message="tns:IEmpSea_SalaryGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/SalaryGridResponse" message="tns:IEmpSea_SalaryGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPanCardIDExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/CheckPanCardIDExist" message="tns:IEmpSea_CheckPanCardIDExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/CheckPanCardIDExistResponse" message="tns:IEmpSea_CheckPanCardIDExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpSearchDepDes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/EmpSearchDepDes" message="tns:IEmpSea_EmpSearchDepDes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/EmpSearchDepDesResponse" message="tns:IEmpSea_EmpSearchDepDes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEditEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/AddEditEmployee" message="tns:IEmpSea_AddEditEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/AddEditEmployeeResponse" message="tns:IEmpSea_AddEditEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/ViewDetail" message="tns:IEmpSea_ViewDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/ViewDetailResponse" message="tns:IEmpSea_ViewDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/EmployUpdate" message="tns:IEmpSea_EmployUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/EmployUpdateResponse" message="tns:IEmpSea_EmployUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmpIDEdit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpSea/CheckEmpIDEdit" message="tns:IEmpSea_CheckEmpIDEdit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpSea/CheckEmpIDEditResponse" message="tns:IEmpSea_CheckEmpIDEdit_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEmpSea" type="tns:IEmpSea">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmpSearch">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/EmpSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSearchName">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/EmpSearchName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveDesignation">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/RetriveDesignation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveDepartment">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/RetriveDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetriveEmpID">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/RetriveEmpID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalaryGrid">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/SalaryGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPanCardIDExist">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/CheckPanCardIDExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSearchDepDes">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/EmpSearchDepDes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEditEmployee">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/AddEditEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewDetail">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/ViewDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployUpdate">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/EmployUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmpIDEdit">
+      <soap:operation soapAction="http://tempuri.org/IEmpSea/CheckEmpIDEdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmpSea">
+    <wsdl:port name="BasicHttpBinding_IEmpSea" binding="tns:BasicHttpBinding_IEmpSea">
+      <soap:address location="http://localhost:49595/EmpSea.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
