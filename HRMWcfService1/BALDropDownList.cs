@@ -71,5 +71,10 @@ namespace HRMWcfService1
         {
             return HRMDAL.DALDropDownList.Nationality();
         }
+
+        public static DataTable NIOType()
+        {
+            return HRMDAL.DALDropDownList.NIOType();
+        }
     }
 }

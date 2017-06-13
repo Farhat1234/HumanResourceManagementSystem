@@ -55,3 +55,10 @@ D:\Projects\HRMS\HRM 13-06-2017\HRMDAL\bin\Debug\Microsoft.ReportViewer.Common.d
 D:\Projects\HRMS\HRM 13-06-2017\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
 D:\Projects\HRMS\HRM 13-06-2017\HRMDAL\obj\Debug\HRMDAL.dll
 D:\Projects\HRMS\HRM 13-06-2017\HRMDAL\obj\Debug\HRMDAL.pdb
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\bin\Debug\HRMDAL.dll.config
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\bin\Debug\HRMDAL.dll
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\bin\Debug\HRMDAL.pdb
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\obj\Debug\HRMDAL.dll
+D:\Projects\HRMS\HumanResourceManagementSystem\HRMDAL\obj\Debug\HRMDAL.pdb

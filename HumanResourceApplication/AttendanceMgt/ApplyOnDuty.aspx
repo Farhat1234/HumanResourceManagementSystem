@@ -177,11 +177,6 @@
 			        <p>Not In Office Category</p>
 			        <span class="icon-case"><i class="fa fa-search-plus"></i></span>
 				          <asp:DropDownList ID="ddlNIO" runat="server" class="dropdownlist">
-                              <asp:ListItem Text="---Select NIO Category---" Value="0" Selected="True"></asp:ListItem>
-                              <asp:ListItem Text="Team Outing" Value="Team Outing"></asp:ListItem>
-                              <asp:ListItem Text="Work From Home" Value="Work From Home"></asp:ListItem>
-                              <asp:ListItem Text="Client Visit" Value="Client Visit"></asp:ListItem>
-                              <asp:ListItem Text="Compensatory Off" Value="Compensatory Off"></asp:ListItem>
                             </asp:DropDownList>
        </div> 
 
